@@ -70,5 +70,9 @@ class BookmarksController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def bookmark_params
       params.require(:bookmark).permit(:title, :url)
+      unless @bookmark = current_user.bookmarks.where(id: params[:id]).first
+        flash[:alert] = 'Bookmark not found.'
+        redirect_to root_url
+      end
     end
 end
