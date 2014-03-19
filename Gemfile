@@ -21,9 +21,12 @@ gem 'coffee-rails', '~> 4.0.0'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
-# Use jquery and zurb as the JavaScript library
+# Use jquery and zurb as the JavaScript libraries
 gem 'jquery-rails'
 gem 'zurb-foundation', '~> 4.2.2'
+
+# Use simple_form
+gem 'simple_form', '~> 3.0.0.rc'
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
